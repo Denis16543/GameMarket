@@ -1,0 +1,16 @@
+
+body {
+    background-color: rgba(61, 9, 82, 0.952);
+    
+        /* Градієнт на фон */
+        background: linear-gradient(45deg, #ffffff, #5a065a);
+        /* Центрування та інші стилі */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+    
