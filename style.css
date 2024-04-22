@@ -1,9 +1,9 @@
 
 body {
-    background-color: rgba(61, 9, 82, 0.952);
+    background-color: rgba(47, 80, 228, 0.952);
     
         /* Градієнт на фон */
-        background: linear-gradient(45deg, #ffffff, #5a065a);
+        background: linear-gradient(45deg, #ffffff, #3a3cd3);
         /* Центрування та інші стилі */
         display: flex;
         justify-content: center;
@@ -13,4 +13,10 @@ body {
         font-family: Arial, sans-serif;
         color: #fff;
     }
-    
+    .photo{
+        margin-left:0;
+        margin-bottom: 700px;
+}
+.button{
+    margin-right: 500px;
+}
