@@ -4,7 +4,7 @@ body{
 }
 
 content{
-    width: 800px;
+    width: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,11 +29,35 @@ div {
 }
 
 .items {
-    padding: 10px;
+    /*padding: 10px;*/
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*gap: 2px;*/
 }
 
 .item{
+    width: 200px;
+    height: 320px;
+    margin-bottom: 10px;
 
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+.contacts p {
+    margin: 3px;
+}
+
+.contacts p:first-child {
+    font-weight: bold;
+}
+
+.contacts p:last-child {
+    border-left: 3px solid rgb(253, 48, 48);;
+}
+.license {
+    font-size: 9px;
+    text-align: justify;
+    color: rgb(120, 120, 120);
 }
