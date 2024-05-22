@@ -1,24 +1,40 @@
 //Знаходимо елемент по заданому id в index.html файлі
 var items = document.getElementById('items');
 
-//Створюємо масив елементів з параметрами які будуть належать item
-const itemsArr = [
-    { name: 'Мотокоса 43', salePrice: 5499, prices: 4497, couponPrice: 3498, images: 'assets/images/1.webp'},
-    { name: 'Електричний тример 110', salePrice: 4497, prices: 3498, couponPrice: 3396, images: 'assets/images/2.webp'},
-    { name: 'Мотокоса 43', salePrice: 4997, prices: 3297, couponPrice: 3195, images: 'assets/images/3.webp'},
-    { name: 'Мотокоса 43', salePrice: 2190, prices: 1698, couponPrice: 1596, images: 'assets/images/4.webp'}
-];
 
+
+//Визначення масиву об'єктів
+let itemsArray = [
+    {
+            email: "23b_bvo@liceum.ztu.edu.ua",
+            class: "10-Б 1",
+            name: "Башинська Вікторія",
+            author_photo: "Башинська.jpg",  
+            project_1_name: "Dudi 3",
+            project_1_github_repository: "https://github.com/ViktoriaBashinska/Phaser2stGame",
+            project_1_live_version: "https://viktoriabashinska.github.io/Phaser2stGame/",
+            project_1_google_drive_folder: "https://drive.google.com/drive/folders/15v_c4DzKpW5323A4wYMV2Zj7AwRkSPUE?usp=sharing",
+            project_1_google_form: "https://forms.gle/jHMQsybKdMdUHXKA7",
+            project_1_game_photo: "Башинська_gamephoto.jpg",  
+            project_2_name: "GameMarket_Bashynska",
+            project_2_github_repository: "https://github.com/ViktoriaBashinska/GameMarket_Bashynska",
+            project_2_live_version: "https://viktoriabashynska.github.io/GameMarket_Bashynska/",
+            project_2_market_page: "https://viktoriabashynska.github.io/GameMarket_Bashynska/market.html",
+            project_2_final_page: "https://viktoriabashynska.github.io/GameMarket_Bashynska/final/final.html",
+            project_2_game_photo: "URL_до_фото_гри_2"  // Додайте URL до фото гри 2
+          
+          
+    }
+]
 // Перевірка чи існує items
 if (items) {
-    //За допомогою метода forEach перераховуємо усі дані для items
-    itemsArr.forEach((item, index) => {
-        //Створюємо елемент item поки у нас не закінчиться перелік елементів
+        itemsArray.forEach((item, index) => {
         items.innerHTML += `
             <div class="item">
                 <div class="item-title">${item.name}</div>
                 <div class="item-image">
-                    <img src="${item.images}" alt="${item.name}">
+                    <img src="img/${item.author_photo}" class="item-name">
+                    <img src=img/${item.project_1_game_photo}" class="item-name">
                 </div>
                 <div class="parts-pay">
                     <div><img src="../assets/icons/monolapka.png" alt="">6</div>
